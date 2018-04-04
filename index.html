@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="bingo.css" media="screen" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="bingo.js"></script>
+    </head>
+    <body>
+        <div>
+            <h1>Gerador de cartelas de bingo para o chá da Luana</h1>
+            <div>
+                <label>Range de 1 a:</label>
+                <input type="number" id="valorMaximoNumeros" value="50" min=1 max=99 />
+            </div>
+            <div>
+                <label>Números a sortear:</label>
+                <input type="number" id="quantidadeNumeros" value="16" min=1 max=99 />
+            </div>
+            <div>
+                <label>Quantidade de cartelas premiadas:</label>
+                <input type="number" id="quantidadePremiadas" value="5" min=1 max=99 />
+            </div>
+            <div>
+                <label>Quantidade de cartelas não premiadas:</label>
+                <input type="number" id="quantidadeNaoPremiadas" value=65 min=1 max=99 />
+            </div>
+            
+            <button onclick="GerarCartelasClick()">Gerar</button>
+            <button id="printButton" style="display: none" onclick="PrintElem()">Imprimir</button>
+        </div>
+        <!-- <div class="cartela">
+            <span class="title">Bingo</span>
+            <div>
+                <div class="valor">02</div>
+                <div class="valor">10</div>
+                <div class="valor">22</div>
+                
+                <div class="valor">25</div>
+                <div class="centro"><span>Chá</span><span>da</span><span>Lu</span></div>
+                <div class="valor">15</div>
+                
+                <div class="valor">09</div>
+                <div class="valor">01</div>
+                <div class="valor">37</div>
+            <div>
+            <span class="footer">Você ganha se completar toda a cartela</span>
+            <span class='serial'>33</span>
+        </div> -->
+        <br><br><Br>
+        <div id="print">
+            <div id="cartelasVencedoras"></div>
+            <h3>Números sorteados</h3>
+            <div id="numerosVencedores">
+            </div>
+            <br>
+            <div id="todasCartelas"></div>
+        </div>
+    </body>
+</html>
